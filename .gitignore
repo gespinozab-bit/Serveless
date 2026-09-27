@@ -1,0 +1,8 @@
+node_modules/
+dist/
+package/
+*.zip
+.npm-cache/
+.pnpm-store/
+lambda-package/
+sharp-layer/

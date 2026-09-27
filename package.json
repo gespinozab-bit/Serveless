@@ -1,0 +1,25 @@
+{
+  "name": "s3-image-resizer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lambda para redimensionar imágenes JPEG y PNG de S3",
+  "main": "dist/index.js",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && node esbuild.config.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1141.0",
+    "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.163",
+    "@types/node": "^22.20.4",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
+  }
+}
